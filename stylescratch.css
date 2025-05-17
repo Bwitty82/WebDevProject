@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    background-color: #a1c3ff;
+}
+
+
+
+#main-header{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(121, 65, 33);
+    color: beige;
+    padding: 10px;
+}
+
+
+#main-footer{
+    text-align:center;
+    font-size: 18px;
+
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+    line-height: 1.6;
+    margin: 0;   
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar{
+    
+    color: #fff;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+/* #navbar li{
+    display: inline;
+} */
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: bold
+}
+
+#showcase{
+    background-image:url('./Image/showcase');
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: #929281;
+    font-size: 50px;
+    line-height: 1.6;
+    padding-top: 30px;
+}
+
+#blog-main{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    float: right;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(143, 142, 121);
+    color: black;
+}
+
+.sidebar a{
+    color: black;
+}
+
+@media(max-width:600px){
+    #blog-main{
+        width: 100%;
+        float:none
+    }
+    .sidebar{
+        width: 100%;
+        float: none;
+    }
+}
