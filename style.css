@@ -31,34 +31,47 @@ ul{
 .container {
     max-width: 1300px;
     margin: 0 auto;
-    /* padding: 0 30px; */
+    padding: 0 30px;
 }
 
 /* Navbar base styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#1c6b12d5;
+    /* display: flex; */
+    justify-content: space-between; 
+    align-items: center; 
+    background:#1c6b12d5;
     padding: 1rem;
     color:#f5f5dc;
-    ;
-    
+    /* height: 60px; */
+    height: 100%;
+        
   }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    font-size: 18px;
+    height: 100%;
+}
   
   .logo {
     color: #f5f5dc;
     font-size: 1.5rem;
     font-weight: bold;
+       
     }
   
   .nav-links {
     display: flex;
     list-style: none;
+    justify-content: space-between;
     gap: 1rem;
   }
   
   .nav-links a {
+    display: flex;
     color: #f5f5dc;
     text-decoration: none;
         
@@ -155,14 +168,9 @@ header {
     color: #f5ffdc;
   }
 
-@media(max-width: 768px) {
+  
+@media(max-width: 728px) {
    
-   /* .navbar .container {
-    flex-direction: column;
-        padding-top: 20px;
-        text-align: center;
-    } */
-
     .nav-links {
         display: none;
         flex-direction: column;
@@ -182,23 +190,9 @@ header {
         margin-top: 10px;
         display: block;
         text-align: center;
+        padding-bottom: 10px;
       }
 
-    /* .nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #9fc5a8;
-        Green background for mobile view
-    }
-/*    
-    .nav li {
-        margin: 10px 0;
-        text-align: center;
-    } */ 
 
     .header .container {
         flex-direction: row;    
@@ -209,6 +203,24 @@ header {
     .boxes .container {
         display: block;
         text-align: center;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        'content' 
+        'sidebar'
+        'footer'
+        ;
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 150px 25px;
+
+        footer {
+            padding-bottom: 35px;
+            text-align: left;
+        }
     }
 
   
